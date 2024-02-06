@@ -1,5 +1,5 @@
 Procedure:
-1. Generate noise values using noise_values.py.
+1. Generate noise values using noise_values.py (noise values are reused for all trials in all blocks).
 2. Generate trial parameters using multi_trial.py.
 3. Generate noise_gabor values using gabor_values.py (based on the generated parameters).
 4. Create directories and generate images using image_generator.py (you may need to change some parameters and call the functions separately).
