@@ -6,4 +6,6 @@ Procedure:
 5. Repeat step 2 to step 4 if you have multiple blocks (previously generated parameters and noise_gabor values will be overwritten, so remember to save them in a safe place).
 6. Run the experiment using piloting_rev.py.
 
-Note. All images with the same number share the same noise background.
+Note. 
+1. All images with the same number in the same trial share the same noise background.
+2. If you are running the experiment with a limited RAM, it would be better to put the code in a large disk and manually increase virtual memory to avoid memory errors.
