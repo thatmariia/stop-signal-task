@@ -10,7 +10,7 @@ from make_annulus import *
 from make_fixation import *
 
 def single_trial(
-    ref_rate_hz = 120, stim_dir = "stimuli", snr = 1/3, stop_trial = True, 
+    ref_rate_hz = 120, stim_dir = "stimuli", snr = 1/6, stop_trial = True, 
     only_noise_ms = 500, only_gabor_ms = 500, trial_length_ms = 2000, noise_freq_hz = 40, gabor_freq_hz = 30, ann_freq_hz = 24):
     
     component_lengths = ref_rate_hz / np.array([noise_freq_hz, gabor_freq_hz, ann_freq_hz])
