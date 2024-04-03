@@ -1,3 +1,6 @@
+# Written by Konrad Mikalauskas (2023)
+# Modified by Yiming Zhao (2024)
+
 import pandas as pd
 import numpy as np
 from scipy.stats import gamma
