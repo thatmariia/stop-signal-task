@@ -1,3 +1,5 @@
+# Written by Yiming Zhao (2024)
+
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
