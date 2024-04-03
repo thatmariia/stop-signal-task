@@ -1,3 +1,6 @@
+# Written by Konrad Mikalauskas (2023)
+# Modified by Yiming Zhao (2024)
+
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
