@@ -1,0 +1,8 @@
+numpy
+matplotlib
+pandas
+scipy
+Pillow
+psychopy
+tqdm
+psychopy-sounddevice
