@@ -7,6 +7,7 @@ Requirements:
 * For packages, see requirements.txt
 
 Procedure:
-1. Open main.py
-2. Set `project_part = ProjectPart.IMG_GEN` to generate images or `project_part = ProjectPart.EXPERIMENT` to run the experiment
-3. Run main.py
+1. Download and unpack the [zipped folders](https://amsuni-my.sharepoint.com/:f:/r/personal/m_turchina_uva_nl/Documents/stop-signal-task-zips?csf=1&web=1&e=zjwXDo) into the root directory
+2. Open main.py
+3. Set `project_part = ProjectPart.IMG_GEN` to generate images or `project_part = ProjectPart.EXPERIMENT` to run the experiment
+4. Run main.py
