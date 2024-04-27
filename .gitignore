@@ -1,14 +1,11 @@
-# sounds
-*.wav
-
-# images
-Stimuli/block_*
-
 # data
 data/**/*
+stimuli/**/*
+instruction/**/*
+sounds/**/*
 
 # backup
-backup/
+backup/**/*
 
 
 .idea/
