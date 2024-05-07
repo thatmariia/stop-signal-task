@@ -37,11 +37,13 @@ class FormalExperiment:
             # This is the ending text for the last block
             if block == config.n_blocks - 1:
                 visuals.show_after_experiment_screen(accuracy_rate=accuracy_rate)
+                config_exp.win.flip()
+                time.sleep(10)
             else:
                 visuals.show_after_block_screen(block=block, accuracy_rate=accuracy_rate)
+                config_exp.win.flip()
+                time.sleep(180)
 
-            config_exp.win.flip()
-            time.sleep(5)
 
     def _experiment(self, block):
         """
