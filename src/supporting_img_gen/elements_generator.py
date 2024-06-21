@@ -1,7 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-from globals import *
+from utils.globals import *
 
 
 class ElementsGenerator:

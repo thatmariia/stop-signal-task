@@ -1,4 +1,4 @@
-from globals import *
+from utils.globals import *
 from psychopy import event
 
 from supporting_experiment.sounds import Sounds

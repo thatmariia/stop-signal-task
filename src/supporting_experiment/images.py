@@ -1,4 +1,4 @@
-from globals import *
+from utils.globals import *
 
 from PIL import Image
 from psychopy import visual

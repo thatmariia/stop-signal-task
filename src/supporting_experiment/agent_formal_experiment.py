@@ -5,7 +5,7 @@ import random
 from psychopy import core
 import gc
 
-from globals import *
+from utils.globals import *
 from supporting_experiment.visuals import Visuals
 from supporting_experiment.block_params_experiment import BlockParamsExperiment
 from supporting_experiment.images import Images

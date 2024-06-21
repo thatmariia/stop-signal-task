@@ -8,7 +8,7 @@ import pandas as pd
 from supporting_img_gen.block_params_img_gen import BlockParamsImgGen
 from supporting_img_gen.elements_generator import ElementsGenerator
 from supporting_img_gen.type_img_generator import TypeImgGenerator
-from globals import *
+from utils.globals import *
 
 
 class ImageGenerator:

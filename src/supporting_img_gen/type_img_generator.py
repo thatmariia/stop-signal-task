@@ -1,8 +1,7 @@
 import random
 import matplotlib.pyplot as plt
 
-from supporting_img_gen.elements_generator import ElementsGenerator
-from globals import *
+from utils.globals import *
 
 
 class TypeImgGenerator:

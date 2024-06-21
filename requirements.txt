@@ -1,8 +1,8 @@
-numpy
-matplotlib
-pandas
-scipy
-Pillow
-psychopy
-tqdm
-psychopy-sounddevice
+numpy==1.26.*
+matplotlib==3.8.*
+pandas==2.2.*
+scipy==1.13.*
+Pillow==10.3.*
+psychopy==2024.1.*
+tqdm==4.66.*
+psychopy-sounddevice==0.0.*

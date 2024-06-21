@@ -1,5 +1,5 @@
 import pandas as pd
-from globals import *
+from utils.globals import *
 
 
 class BlockParamsImgGen:

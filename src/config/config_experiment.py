@@ -1,7 +1,6 @@
-import numpy as np
 from psychopy import visual, core
 
-from globals import *
+from utils.globals import *
 
 
 class ConfigExperiment:

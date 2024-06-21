@@ -1,7 +1,7 @@
 import pandas as pd
 from ast import literal_eval
 
-from globals import *
+from utils.globals import *
 
 class BlockParamsExperiment:
     """

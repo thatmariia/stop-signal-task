@@ -1,7 +1,7 @@
 from psychopy import visual
 from PIL import Image
 
-from globals import *
+from utils.globals import *
 
 
 class Visuals:
