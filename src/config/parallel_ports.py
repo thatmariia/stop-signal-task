@@ -12,11 +12,14 @@ class ParallelPorts:
 
         self.write_address = None
         self.port_write = None
+        self.read_address = None
+        self.port_read = None
 
     def startup(
             self,
             use=True,
-            write_address=0x4050
+            write_address=0x4050,
+            read_address=0x4051
     ):
         """
         Initialize the parallel ports.
@@ -30,4 +33,6 @@ class ParallelPorts:
 
         if self.use:
             self.write_address = write_address
+            self.read_address = read_address
             self.port_write = parallel.ParallelPort(address=self.write_address)
+            self.port_read = parallel.ParallelPort(address=self.read_address)

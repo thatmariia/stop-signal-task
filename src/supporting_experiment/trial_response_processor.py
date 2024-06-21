@@ -32,7 +32,12 @@ class TrialResponseProcessor:
         if parallel_ports.use:
             parallel_ports.port_write.setData(6)
 
-        response = event.getKeys(keyList=['f', 'j'])
+        if parallel_ports.use:
+            # TODO: read from parallel_ports.port_read instead of keyboard
+            response = event.getKeys(keyList=['f', 'j'])
+        else:
+            response = event.getKeys(keyList=['f', 'j'])
+
         self.response_list.append(response)
 
         # Record RT & keyboard responses
