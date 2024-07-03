@@ -34,7 +34,16 @@ class TrialResponseProcessor:
 
         if parallel_ports.use:
             # TODO: read from parallel_ports.port_read instead of keyboard
-            response = event.getKeys(keyList=['f', 'j'])
+            # response = event.getKeys(keyList=['f', 'j'])
+            response = parallel_ports.port_read.readData()
+            match response:
+                case 109:
+                    response = 'f'
+                case 253:
+                    response = 'j'
+                case _:
+                    response = 'miss'
+            # left = 109, right = 253
         else:
             response = event.getKeys(keyList=['f', 'j'])
 

@@ -36,3 +36,5 @@ class ParallelPorts:
             self.read_address = read_address
             self.port_write = parallel.ParallelPort(address=self.write_address)
             self.port_read = parallel.ParallelPort(address=self.read_address)
+
+            self.port_read.setData(125)
