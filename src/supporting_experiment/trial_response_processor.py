@@ -71,3 +71,11 @@ class TrialResponseProcessor:
             if parallel_ports.use:
                 parallel_ports.port_write.setData(8)
             sounds.incorrect_sound.play()
+
+        # check if any button or key is still being pressed
+        if parallel_ports.use:
+            while parallel_ports.port_read.readData() == 109 or parallel_ports.port_read.readData() == 253:
+                pass
+        else:
+            while 'f' in event.getKeys() or 'j' in event.getKeys():
+                pass
