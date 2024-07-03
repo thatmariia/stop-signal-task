@@ -95,7 +95,7 @@ class Visuals:
         text.draw()
         text = visual.TextStim(
             config_exp.win,
-            text="Now please take a 3 min break.",
+            text="Now you are welcome to take a break.",
             pos=(0, -200),
             height=35
         )

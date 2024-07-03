@@ -42,7 +42,7 @@ class FormalExperiment:
             else:
                 visuals.show_after_block_screen(block=block, accuracy_rate=accuracy_rate)
                 config_exp.win.flip()
-                time.sleep(180)
+                time.sleep(10)
 
 
     def _experiment(self, block):
