@@ -60,7 +60,7 @@ class FormalExperiment:
         trial_order = list(range(config.n_trials))
         random.shuffle(trial_order)
 
-        text = visual.TextStim(config_exp.win, text="Press 'space' to start.", height=45)
+        text = visual.TextStim(config_exp.win, text="Press 'space' to start when ready.", height=45)
         text.draw()
         config_exp.win.flip()
         keys = event.waitKeys(keyList=['space'])

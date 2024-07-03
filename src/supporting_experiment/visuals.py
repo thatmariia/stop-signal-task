@@ -34,7 +34,7 @@ class Visuals:
 
         low_text = visual.TextStim(
             config_exp.win,
-            text="Low spatial frequency: press 'j'",
+            text="Low spatial frequency: press right button",
             pos=(600, -360),
             height=35
         )
@@ -42,7 +42,7 @@ class Visuals:
 
         high_text = visual.TextStim(
             config_exp.win,
-            text="High spatial frequency: press 'f'",
+            text="High spatial frequency: press left button",
             pos=(-600, -360),
             height=35
         )
