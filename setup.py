@@ -20,7 +20,7 @@ setup(
     entry_points={
         'console_scripts': [
             'py_experiment = experiment:experiment',
-            'py_image_generation = image_generation:image_generation',
+            'py_image_generation = image_generator:image_generator',
         ]
     },
     classifiers=[
