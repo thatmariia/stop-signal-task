@@ -42,7 +42,7 @@ class TrialResponseProcessor:
                 case 253:
                     response = 'j'
                 case _:
-                    response = 'miss'
+                    response = []
             # left = 109, right = 253
         else:
             response = event.getKeys(keyList=['f', 'j'])
