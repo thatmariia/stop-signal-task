@@ -32,3 +32,12 @@ To run the experiment, run:
 ```sh
 py_experiment
 ```
+
+Both commands can be run with the following arguments:
+- `--n_blocks` - number of blocks (default: 4)
+- `--n_trials` - number of trials per block (default: 90)
+
+For example, running the experiment with 2 blocks and 50 trials per block can be done as follows:
+```sh
+py_experiment --n_blocks 2 --n_trials 50
+```
