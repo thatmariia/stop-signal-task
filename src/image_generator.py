@@ -1,13 +1,14 @@
 from supporting_img_gen.agent_image_generator import ImageGenerator
 
+from config.parser import get_parsed_args
 from utils.globals import *
 
 
 def image_generator():
-    # remove arguments for the real img gen & experiment
+    args = get_parsed_args()
     config.startup(
-        n_blocks=2,
-        n_trials=4
+        n_blocks=args.n_blocks,
+        n_trials=args.n_trials
     )
 
     config_gen.startup()
