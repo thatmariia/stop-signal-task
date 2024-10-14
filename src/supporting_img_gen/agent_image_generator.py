@@ -89,7 +89,7 @@ class ImageGenerator:
         # randomly draw the length of cue intervals and response intervals from a uniform distribution
         snr_vec = np.random.gamma(10, 1 / 60, config.n_trials)
         only_noise_ms_vec = [random.uniform(500, 1000) for _ in range(config.n_trials)]
-        only_gabor_ms_vec = [random.uniform(0, 500) for _ in range(config.n_trials)]
+        only_gabor_ms_vec = [np.random.exponential(scale=500) for _ in range(config.n_trials)] # Added by Michael 14-Oct-2024
         trial_length_ms_vec = [random.uniform(1200, 2000) for _ in range(config.n_trials)]
 
         frame_length_use = []
@@ -152,7 +152,11 @@ class ImageGenerator:
         noise_frames = int(only_noise_ms / 1000 * config.refresh_rate)
         if stop_trial:
             only_gabor_frames = int(only_gabor_ms / 1000 * config.refresh_rate)
-            gabor_ann_frames = int(trial_length_ms / 1000 * config.refresh_rate) - only_gabor_frames
+            trial_frames = int(trial_length_ms / 1000 * config.refresh_rate)
+            if only_gabor_frames < trial_frames: # Added by Michael 14-Oct-2024
+                gabor_ann_frames = trial_frames - only_gabor_frames
+            else:
+                gabor_ann_frames = 0
         else:
             only_gabor_frames = int(trial_length_ms / 1000 * config.refresh_rate)
             gabor_ann_frames = 0
